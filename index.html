@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Let Me Serve You!</title>
+</head>
+<body>
+    <div class="main  langCng" lang="ja">
+        <nav>
+            <div class="header">
+                <h2>Let Me Serve You!</h2>
+            </div>
+            <div class="links">
+                <ul>
+                    <li>
+                        <a href="#">Webページ・アプリ開発</a>
+                    </li>
+                    <li>
+                        <a href="#">翻訳</a>
+                    </li>
+                    <li>
+                        <a href="#">コンサルタント</a>
+                    </li>
+                    <li>
+                        <a href="#">お問い合わせ</a>
+                    </li>
+                    <div id="switch">
+                        <input type="radio" name="langKbn" id="sJa" onClick="langSet('ja')" checked>
+                        <label for="sJa">
+                            <span class="langCng" lang="ja">日本語</span>
+                            <span class="langCng" lang="en">Japanese</span>
+                        </label>
+        
+                        <input type="radio" name="langKbn" id="sEn" onClick="langSet('en')">
+                        <label for="sEn">
+                            <span class="langCng" lang="ja">英語</span>
+                            <span class="langCng" lang="en">English</span>
+                        </label>
+                    </div>
+                </ul>
+            </div>     
+        </nav>
+
+        <!--サービス内容詳細-->
+        <div class="infomation">
+            <div class="overlay"></div>
+            <div id="circle">
+                <div class="feature prg">
+                    <div>
+                        <h1>Webページ・アプリ開発</h1>
+                        <p>カスタムメイド式のウェブページ・アプリをお届けします!</p>
+                        <p>対応言語:HTML, CSS, JavaScript,Python, Golang</p>
+                        <p>フレームワーク:node.js, Django</p>
+                    </div>
+                </div>
+                <div class="feature trans">
+                    <img src="./images/trans.png" alt="">
+                    <div>
+                        <h1>翻訳サービス</h1>
+                        <p>提案書、レポートなどの資料を翻訳!</p>
+                        <p>対応言語:日本語、英語、フランス語</p>
+                    </div>
+                </div>
+                <div class="feature consultancy">
+                    <div>
+                        <h1>コンサルタントサービス</h1>
+                        <p>営業戦略、事業戦略の観点からサポートいたします！</p>
+                        <p>サービス例：提案書作成、リサーチワーク, etc</p>
+                    </div>
+                </div>
+                <div class="feature contact">
+                    <div>
+                        <h1>お問い合わせ</h1>
+                        <p>以下までお問い合わせください。</p>
+                        <p>メールアドレス: t.h.his.story@gmail.com</p>
+                        <p>「検討」段階でも歓迎です。是非ご連絡ください。</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <!-- 回転部分 -->
+        <div class="control">
+            <img src="./images/vector.png" id="upBtn" alt="">
+            <h3>回してみてね！</h3>
+            <img src="./images/vector.png" id="dnBtn" alt="">
+
+        </div>   
+    </div>
+
+    <div class="main  langCng" lang="en">
+        <nav>
+            <div class="header">
+                <h2>Let Me Serve You!</h2>
+            </div>
+            <div class="links">
+                <ul>
+                    <li>
+                        <a href="#">Websites and Apps</a>
+                    </li>
+                    <li>
+                        <a href="#">Translation</a>
+                    </li>
+                    <li>
+                        <a href="#">Consulting</a>
+                    </li>
+                    <li>
+                        <a href="#">Contact</a>
+                    </li>
+                    <div id="switch">
+                        <input type="radio" name="langKbn" id="sJa" onClick="langSet('ja')" >
+                        <label for="sJa">
+                            <span class="langCng" lang="ja">日本語</span>
+                            <span class="langCng" lang="en">Japanese</span>
+                        </label>
+        
+                        <input type="radio" name="langKbn" id="sEn" onClick="langSet('en')" checked>
+                        <label for="sEn">
+                            <span class="langCng" lang="ja">英語</span>
+                            <span class="langCng" lang="en">English</span>
+                        </label>
+                    </div>
+                </ul>
+            </div>     
+        </nav>
+
+        <!--サービス内容詳細-->
+        <div class="infomation">
+            <div class="overlay"></div>
+            <div id="circle">
+                <div class="feature prg">
+                    <div>
+                        <h1>Websites and Apps</h1>
+                        <p>You can get your custom-made service</p>
+                        <p>Available: HTML, CSS, JavaScript,Python, Golang</p>
+                        <p>Framework:node.js, Django</p>
+                    </div>
+                </div>
+                <div class="feature trans">
+                    <img src="./images/trans.png" alt="">
+                    <div>
+                        <h1>Translation</h1>
+                        <p>We will provide you with sophisticated translation <br>
+                        for your documents</p>
+                        <p>Available:Japanese、English、French</p>
+                    </div>
+                </div>
+                <div class="feature consultancy">
+                    <div>
+                        <h1>Consulting</h1>
+                        <p>We will boost your sales and management strategy</p>
+                        <p>e.g. Proposals, Research Papers, etc</p>
+                    </div>
+                </div>
+                <div class="feature contact">
+                    <div>
+                        <h1>Contact</h1>
+                        <p>E-mail the below address to get further infomation!</p>
+                        <p>Mail Address: t.h.his.story@gmail.com</p>
+                        <p>You can receive free estimates!</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <!-- 回転部分 -->
+        <div class="control">
+            <img src="./images/vector.png" id="upBtn" alt="">
+            <h3>Rotate Contents Here!</h3>
+            <img src="./images/vector.png" id="dnBtn" alt="">
+
+        </div>   
+    </div>
+
+    <div id="output"></div>
+    <p>マウス座標です。</p>
+    <script src="app.js"></script>
+</body>
+</html>

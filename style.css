@@ -1,0 +1,213 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+*:lang(ja){
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+*:lang(en){
+    font-family: 'Times New Roman', Times, serif;
+}
+
+
+.main{
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(to right, rgb(33, 121, 121), lightblue);
+    position: relative;
+    overflow: hidden;
+}
+
+.main h2{
+    color:blue;
+    font-size: 1.5rem;
+}
+
+nav{
+    display: flex;
+    position: sticky;
+    z-index: 1;
+}
+nav div.header{
+    margin-right: 21rem;
+}
+/* 強制に右揃え */
+nav div.links{
+    flex: 1;
+    text-align: right;
+}
+
+nav ul li{
+    list-style: none;
+    display: inline-block;
+    margin-left: 0.2rem;
+}
+nav ul li a{
+    text-decoration: none;
+    color: black;
+    font-size: 1.0rem;
+    font-weight: 600;
+    margin-right: 15px;
+}
+
+nav ul li a:hover{
+    color: orangered;
+    transition: 0.3s;
+    text-decoration: underline;
+}
+
+nav ul li a::after {
+    position: absolute;
+    left: 0;
+    content: '';
+    width: 100%;
+    height: 2px;
+    bottom: -1px;       /*アンダーラインが位置する、各リストの下端からの高さ　ヘッダーの下端に合わせています*/
+    visibility: hidden; /*ホバー前に、アンダーラインを可視化しない*/
+    }
+    
+    a:hover::after {
+    visibility: visible; /*ホバー後、アンダーラインを可視化する*/
+    }
+
+div.infomation{
+    display: flex;
+    height: 1000px;
+    width: 1000px;
+    position: absolute;
+    top: 50%; 
+    left: -10%;
+    transform: translate(0, -50%);  
+}
+div.overlay{
+    height: 0;
+    width: 0;
+    border-top: 520px solid white;
+    border-left: 520px solid white;
+    border-bottom: 520px solid white;
+    border-right: 520px solid transparent;
+}
+
+#circle{
+    position: absolute;
+    height: 1000px;
+    width: 1000px;
+    border-radius: 50%;
+    top: 0;
+    left: 0;
+    transform: rotate(0deg);
+    transition: 1.0s;
+}
+
+div.feature{
+    position: absolute; 
+    display: flex;
+    margin-left: 50px; 
+}
+.feature {
+    display: flex;
+}
+.feature img{
+    height: 25%;
+    width: 25%;
+}
+.feature div h1{
+    font-size: 1rem;
+    text-decoration: solid;
+}
+.feature div{
+    margin-left: 20px;
+}
+
+.feature div p{
+    margin-top: 8px;
+}
+
+
+/* ここからサービス各種座標 */
+.prg{
+    top: 460px;
+    right: 0;
+}
+
+.trans{
+    top: 160px;
+    right: 350px;
+    transform: rotate(-90deg);
+}
+
+.consultancy{
+    bottom: 480px;
+    left: 0px;
+    transform: rotate(-180deg);
+}
+
+.contact{
+    bottom: 120px;
+    right: 300px;
+    transform: rotate(-270deg);
+}
+
+
+/* 回転ボタン設定 */
+.control{
+    position: absolute;
+    top: 50%;
+    right: 5%;
+    transform: translate(-50%,0);
+    text-align: center;
+}
+.control h3{
+    font-weight: 600;
+    text-decoration: underline blue;
+}
+
+#upBtn{
+    cursor: pointer;
+    margin-bottom: 4px;
+}
+
+#dnBtn{
+    cursor: pointer;
+    transform: rotate(-180deg);
+    margin-top: 4px;
+}
+
+/* 座標取得 */
+#output{
+    margin:10px;
+    height: 1.5em;
+    font-size:30px;
+}
+
+/* 言語切り替え */
+#switch{
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    font-size: 12px;
+    margin: 15px;
+    margin-bottom: 35px;
+    margin-right: 15px;
+}
+
+/* === radio部分を消去 ================== */
+#switch input[type="radio"]{
+    display    : none;
+}
+   
+/* === ラジオボタンをボタンに変更 == */
+#switch label{
+    border     : 1px solid white;
+    box-shadow : 2px 2px #999;
+    padding    : 2px 6px;
+    border-style: groove;   
+}
+   
+/* === 選択されている言語のラベル色を変更 ==== */
+#switch input[type="radio"]:checked + label {
+    background : orange;
+}
